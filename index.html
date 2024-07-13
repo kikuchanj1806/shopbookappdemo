@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6, user-scalable=no">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery.min.js"></script>
+    <script src="./lib/slick/slick.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./lib/css/Awesome_Pro_6.0.0.min.css">
+    <link rel="stylesheet" href="./lib/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="./lib/css/card.css">
+    <!-- <link rel="stylesheet" href="./lib/css/category.css"> -->
+    <link rel="stylesheet" href="./lib/css/detail.css">
+    <link rel="stylesheet" href="./lib/css/footer.css">
+    <link rel="stylesheet" href="./lib/css/header.css">
+    <link rel="stylesheet" href="./lib/css/index.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="header-top-inner">
+                <img src="https://hoang-phuc.com/media/wysiwyg/240319_Voucher-Extra_Homepage_Top-Banner_Desktop.gif" alt="headerTop image">
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-inner">
+                    <div class="header-logo">
+                        <a href="/"><img src="/assets/images/logo.png" alt="header logo"></a>
+                    </div>
+                    <div class="header-search-desktop">
+                        <div class="form-search-control">
+                            <form class="form-search">
+                                <span class="header-search-back d-lg-none d-xl-none"><i class="fa-regular fa-angle-left"></i></span>
+                                <span class="header-search-icon"><i class="fa-light fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" id="inputSearch">
+                                <button class="search-btn" type="submit">tìm kiếm</button>
+                            </form>
+                        </div>
+                        <div class="search-autocomplete">
+                            <div class="suggestion-container">
+                                <div class="suggestion-content">
+                                    <div class="suggestion-title">
+                                        <h3>Gợi ý tìm kiếm</h3>
+                                    </div>
+                                    <div class="suggestion-options">
+                                        <ul>
+                                            <li><a href="#">Sách địa lý</a></li>
+                                            <li><a href="#">Sách toán</a></li>
+                                            <li><a href="#">Sách văn</a></li>
+                                            <li><a href="#">toshiko</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right-links">
+                        <div class="header-right-item search-item d-lg-none">
+                            <a href="#">
+                                <span class="hri-icon">
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header-right-item cart-item">
+                            <a href="#">
+                                <span class="hri-icon">
+                                    <i class="fa-light fa-cart-shopping"></i>
+                                    <span class="cart-qty">1</span>
+                                </span>
+                                <div class="hri-content">
+                                    <span>Giỏ hàng</span>
+                                    <span class="label"><span class="cart-qty">1</span> sản phẩm</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header-right-item menu-item d-lg-none">
+                            <a href="#">
+                                <span class="hri-icon open-nav">
+                                    <i class="fa-light fa-bars"></i>
+                                </span>
+                                <span class="hri-icon cls-nav">
+                                    <i class="fa-light fa-xmark"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-nav">
+                    <ul class="megamenu">
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách toán</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách văn</span>
+    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách địa lý</span>
+    
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="./category.php">Lorem, ipsum.</a>
+                            <span class="d-lg-none"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="submenu">
+                                <ul>
+                                    <li class="d-lg-none submenu-title">
+                                        <span class="back-submenu"><i class="fa-solid fa-chevron-left"></i></span>
+                                        <span>Lorem, ipsum.</span>
+                                    </li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="promotion-menu"><i class="fa-sharp fa-solid fa-gift"></i><a href="#">Khuyễn mãi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="underHeader"></div>
+    <div class="content">
+        <section id="hp-slide">
+            <div class="hp-slide-inner">
+                <div id="mainSlide">
+                    <div class="slideItem">
+                        <a target="_blank" href="https://toshiko.vn/">
+                            <img src="./lib/images/sld1.jpg" alt="first slide image">
+                        </a>
+                    </div>
+                    <div class="slideItem">
+                        <a target="_blank" href="#">
+                            <img src="./lib/images/sld2.png" alt="second slide image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="hp-bottomSlide">
+            <div class="container">
+                <div class="hp-bottomSlide-inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="bs-item">
+                                <a href="#">
+                                    <div class="bs-image">
+                                        <img src="https://dummyimage.com/100x100/000/fff" alt="bs-image">
+                                    </div>
+                                    <span class="bs-title">
+                                        Ghế Massage chỉ từ 7.000.000đ
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="bs-item">
+                                <a href="#">
+                                    <div class="bs-image">
+                                        <img src="https://dummyimage.com/100x100/000/fff" alt="bs-image">
+                                    </div>
+                                    <span class="bs-title">
+                                        Hàng cao cấp
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="bs-item">
+                                <a href="#">
+                                    <div class="bs-image">
+                                        <img src="https://dummyimage.com/100x100/000/fff" alt="bs-image">
+                                    </div>
+                                    <span class="bs-title">
+                                        Máy chạy bộ chỉ từ 4.999.000
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="bs-item">
+                                <a href="#">
+                                    <div class="bs-image">
+                                        <img src="https://dummyimage.com/100x100/000/fff" alt="bs-image">
+                                    </div>
+                                    <span class="bs-title">
+                                        Ghế Massage chỉ từ 7.000.000đ
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="hp-hotsale">
+            <div class="container">
+                <div class="hp-hotsale-inner">
+                    <div class="hp-hotsale-title">
+                        <div class="hp-hotsale-title-left">
+                            <h1>Hot sale</h1>
+                            <div id="countdown">
+                                <p>Kết thúc sau:</p>
+                                <ul>
+                                    <li><span id="days"></span></li>
+                                    <span>:</span>
+                                    <li><span id="hours"></span></li>
+                                    <span>:</span>
+                                    <li><span id="minutes"></span></li>
+                                    <span>:</span>
+                                    <li><span id="seconds"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hp-hotsale-title-right">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="hotsale-title-1" data-bs-toggle="pill"
+                                            data-bs-target="#hotsale-tab-1" type="button" role="tab" aria-selected="true">
+                                        Ghế massage
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="hotsale-title-2" data-bs-toggle="pill"
+                                            data-bs-target="#hotsale-tab-2" type="button" role="tab" aria-selected="false">
+                                        Xe đạp tập
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="hotsale-title-3" data-bs-toggle="pill"
+                                            data-bs-target="#hotsale-tab-3" type="button" role="tab" aria-selected="false">
+                                        Máy chạy bộ
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="hp-hotsale-content tab-content" id="hp-hotsale-content">
+                        <div class="tab-pane fade show active" id="hotsale-tab-1" role="tabpanel"
+                             aria-labelledby="hotsale-tab-1">
+                            <div class="hotsale-productList">
+                                <div class="productList-slide">
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotsale-tab-2" role="tabpanel" aria-labelledby="hotsale-tab-2">
+                            <div class="hotsale-productList">
+                                <div class="productList-slide">
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotsale-tab-3" role="tabpanel" aria-labelledby="hotsale-tab-3">
+                            <div class="hotsale-productList">
+                                <div class="productList-slide">             
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col prd-col">
+                                        <div class="product-item">
+                                            <div class="sale-label"
+                                                 style="background-image: url(./lib/images/sale-label.svg);">
+                                                <span class="sale-label-detail">Giảm 37%</span>
+                                            </div>
+                                            <div class="product-item-image">
+                                                <a href="./detail.php">
+                                                    <img
+                                                        src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="prd-item-content">
+                                                <a href="./detail.php">
+                                                    <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                                    <div class="prd-price">
+                                                        <span class="prd-pre-price">49.000.000đ</span>
+                                                        <del class="prd-old-price">79.200.00đ</del>
+                                                    </div>
+                                                    <div class="prd-rate">
+                                                        <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                                        <span class="total-rate">(527)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    
+        <section class="hp-prdList">
+            <div class="container">
+                <h2 class="hp-heading">Ghế massage</h2>
+                <div class="hp-prdList-inner">
+                    <div class="productList-slide">
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewmore">
+                        <a href="#">Xem tất cả <i class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="hp-prdList">
+            <div class="container">
+                <h2 class="hp-heading">Ghế massage</h2>
+                <div class="hp-prdList-inner">
+                    <div class="productList-slide">
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewmore">
+                        <a href="#">Xem tất cả <i class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="hp-prdList">
+            <div class="container">
+                <h2 class="hp-heading">Ghế massage</h2>
+                <div class="hp-prdList-inner">
+                    <div class="productList-slide">
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label"
+                                     style="background-image: url(./lib/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail.php">
+                                        <img
+                                            src="https://pos.nvncdn.com/fd5775-40602/ps/20240318_hQYHr2fwxU.jpeg"
+                                            alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail.php">
+                                        <h3 class="prd-name">Chính Sách Tiền Tệ Thế Kỷ 21 </h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewmore">
+                        <a href="#">Xem tất cả <i class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id='hp-customer'>
+            <div class="container">
+                <h1 class="hp-heading">Khách hàng tin dùng</h1>
+                <div class="hp-customer-inner">
+                    <div class="hp-customer-list">
+                        <div class="hc-item">
+                            <img src="https://dummyimage.com/400x250/000/fff" alt="customer image">
+                        </div>
+                        <div class="hc-item">
+                            <img src="https://dummyimage.com/400x250/000/fff" alt="customer image">
+                        </div>
+                        <div class="hc-item">
+                            <img src="https://dummyimage.com/400x250/000/fff" alt="customer image">
+                        </div>
+                        <div class="hc-item">
+                            <img src="https://dummyimage.com/400x250/000/fff" alt="customer image">
+                        </div>
+                        <div class="hc-item">
+                            <img src="https://dummyimage.com/400x250/000/fff" alt="customer image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="hp-partner">
+            <div class="container">
+                <h1 class="hp-heading">Đối tác của Toshiko</h1>
+                <div class="hp-partner-inner">
+                    <div class="hp-partner-list">
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn1.webp" alt="partner image">
+                        </div>
+                        <div class="hp-item">
+                            <img src="./lib/images/pn2.webp" alt="partner image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 footer-col d-none d-lg-block d-xl-block">
+                        <div class="footer-col-inner">
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                            <div class="viewmore-menu">
+                                <p class="viewmore-menu-title">Xem thêm <i class="fa-solid fa-sort-down"></i></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col d-none d-lg-block d-xl-block">
+                        <div class="footer-col-inner">
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <div class="footer-col-inner">
+                            <div class="footer-title">Tổng đài hỗ trợ</div>
+                            <ul class="footer-menu">
+                                <li>Gọi mua:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(7:30 - 22:00)</span></li>
+                                <li>Bảo hành:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(8:00 - 21:00)</span></li>
+                                <li>Khiếu nại:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(8:00 - 21:00)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <div class="viewmore-menu viewmore-menu-mobile d-lg-none">
+                            <p class="viewmore-menu-title">Các thông tin khác <i class="fa-solid fa-sort-down"></i></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-inner">
+                            <ul class="footer-social">
+                                <li><a href=""><img src="./lib/images/facebook-icon.png" alt="facebook icon"></a></li>
+                                <li><a href=""><img src="./lib/images/youtube-icon.png" alt="youyubr icon"></a></li>
+                                <li><a href=""><img src="./lib/images/zalo-icon.png" alt="zalo icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="./lib/js/main.js"></script>
+    <script src="./lib/js/index.js"></script>
+</body>
+</html>
