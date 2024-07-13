@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6, user-scalable=no">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery.min.js"></script>
+    <script src="./lib/slick/slick.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./lib/css/Awesome_Pro_6.0.0.min.css">
+    <link rel="stylesheet" href="./lib/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="./lib/css/card.css">
+    <link rel="stylesheet" href="./lib/css/category.css">
+    <link rel="stylesheet" href="./lib/css/detail.css">
+    <link rel="stylesheet" href="./lib/css/footer.css">
+    <link rel="stylesheet" href="./lib/css/header.css">
+    <link rel="stylesheet" href="./lib/css/index.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="header-top-inner">
+                <img src="https://hoang-phuc.com/media/wysiwyg/240319_Voucher-Extra_Homepage_Top-Banner_Desktop.gif" alt="headerTop image">
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-inner">
+                    <div class="header-logo">
+                        <a href="/"><img src="./lib/images/logo.png" alt="header logo"></a>
+                    </div>
+                    <div class="header-search-desktop">
+                        <div class="form-search-control">
+                            <form class="form-search">
+                                <span class="header-search-back d-lg-none d-xl-none"><i class="fa-regular fa-angle-left"></i></span>
+                                <span class="header-search-icon"><i class="fa-light fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" id="inputSearch">
+                                <button class="search-btn" type="submit">tìm kiếm</button>
+                            </form>
+                        </div>
+                        <div class="search-autocomplete">
+                            <div class="suggestion-container">
+                                <div class="suggestion-content">
+                                    <div class="suggestion-title">
+                                        <h3>Gợi ý tìm kiếm</h3>
+                                    </div>
+                                    <div class="suggestion-options">
+                                        <ul>
+                                            <li><a href="#">Sách địa lý</a></li>
+                                            <li><a href="#">Sách toán</a></li>
+                                            <li><a href="#">Sách văn</a></li>
+                                            <li><a href="#">toshiko</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right-links">
+                        <div class="header-right-item search-item d-lg-none">
+                            <a href="#">
+                                <span class="hri-icon">
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header-right-item cart-item">
+                            <a href="#">
+                                <span class="hri-icon">
+                                    <i class="fa-light fa-cart-shopping"></i>
+                                    <span class="cart-qty">1</span>
+                                </span>
+                                <div class="hri-content">
+                                    <span>Giỏ hàng</span>
+                                    <span class="label"><span class="cart-qty">1</span> sản phẩm</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header-right-item menu-item d-lg-none">
+                            <a href="#">
+                                <span class="hri-icon open-nav">
+                                    <i class="fa-light fa-bars"></i>
+                                </span>
+                                <span class="hri-icon cls-nav">
+                                    <i class="fa-light fa-xmark"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-nav">
+                    <ul class="megamenu">
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách toán</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách văn</span>
+    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./category.php">
+                                <i class="fa-light fa-book"></i>
+                                <span>Sách địa lý</span>
+    
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="./category.php">Lorem, ipsum.</a>
+                            <span class="d-lg-none"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="submenu">
+                                <ul>
+                                    <li class="d-lg-none submenu-title">
+                                        <span class="back-submenu"><i class="fa-solid fa-chevron-left"></i></span>
+                                        <span>Lorem, ipsum.</span>
+                                    </li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="./category.php">Lorem ipsum dolor sit.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="promotion-menu"><i class="fa-sharp fa-solid fa-gift"></i><a href="#">Khuyễn mãi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="underHeader"></div>
+    <div class="content">
+        <section id="breadcrum">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                    <li><span>Sách toán</span></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="category-heading" style="background-image: url(./lib/images/cat-banner.jpg);">
+            <div class="container">
+                <div class="category-heading-inner">
+                    <h1 class="category-title">Sách toán</h1>
+                    <p class="category-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Iusto itaque veritatis voluptas minus, quam rem assumenda enim aliquid excepturi
+                        laborum magni nam officiis fugit fuga totam commodi eius?</p>
+                </div>
+    
+            </div>
+        </section>
+    
+        <section id="categoryProductList">
+            <div class="container">
+                <div id="filter">
+                    <h2 class="filter-title">Chọn theo tiêu chí</h2>
+                    <div id="filterModule">
+                        <div class="filter-wrapper">
+                            <button class="filter-btn button__filter-parent"><span class="fiter-name">Lớp học</span><i class="fa-regular fa-chevron-down"></i></button>
+                            <div class="list-filter-child">
+                                <ul>
+                                    <li><button class="filter-btn button__filter-child">Lớp 1</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 2</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 3</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 4</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 5</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 6</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 7</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 8</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 9</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 10</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 11</button></li>
+                                    <li><button class="filter-btn button__filter-child">Lớp 12</button></li>
+                                </ul>
+                                <div class="btn-filter-group">
+                                    <button class="close-fitler">Đóng</button>
+                                    <button class="save-fitler">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-wrapper">
+                            <button class="filter-btn button__filter-parent"><span class="fiter-name">Môn học</span><i class="fa-regular fa-chevron-down"></i></button>
+                            <div class="list-filter-child">
+                                <ul>
+                                    <li><button class="filter-btn button__filter-child">Môn văn</button></li>
+                                    <li><button class="filter-btn button__filter-child">Môn toán</button></li>
+                                    <li><button class="filter-btn button__filter-child">Môn địa lý</button></li>
+                                    <li><button class="filter-btn button__filter-child">Môn lịch sử</button></li>
+                                </ul>
+                                <div class="btn-filter-group">
+                                    <button class="close-fitler">Đóng</button>
+                                    <button class="save-fitler">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="filter-active"></div>
+                </div>
+                <div id="productList">
+                    <div class="row row-cols-md-3 row-cols-xl-5 row-cols-lg-4">
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col prd-col">
+                            <div class="product-item">
+                                <div class="sale-label" style="background-image: url(./assets/images/sale-label.svg);">
+                                    <span class="sale-label-detail">Giảm 37%</span>
+                                </div>
+                                <div class="product-item-image">
+                                    <a href="./detail">
+                                        <img src="https://pos.nvncdn.com/fd5775-40602/ps/20240523_7fp9nubUKA.png" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="prd-item-content">
+                                    <a href="./detail">
+                                        <h3 class="prd-name">
+                                            Dầu và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</h3>
+                                        <div class="prd-price">
+                                            <span class="prd-pre-price">49.000.000đ</span>
+                                            <del class="prd-old-price">79.200.00đ</del>
+                                        </div>
+                                        <div class="prd-rate">
+                                            <span><span>4/5</span><i class="fa-solid fa-star"></i></span>
+                                            <span class="total-rate">(527)</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="loadMore-box">
+                        <button href="#" id="loadMore">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 footer-col d-none d-lg-block d-xl-block">
+                        <div class="footer-col-inner">
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                            <div class="viewmore-menu">
+                                <p class="viewmore-menu-title">Xem thêm <i class="fa-solid fa-sort-down"></i></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col d-none d-lg-block d-xl-block">
+                        <div class="footer-col-inner">
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <div class="footer-col-inner">
+                            <div class="footer-title">Tổng đài hỗ trợ</div>
+                            <ul class="footer-menu">
+                                <li>Gọi mua:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(7:30 - 22:00)</span></li>
+                                <li>Bảo hành:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(8:00 - 21:00)</span></li>
+                                <li>Khiếu nại:<a class="ft-call" href="tel:0987654321">0987654321</a><span class="footer-time">(8:00 - 21:00)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <div class="viewmore-menu viewmore-menu-mobile d-lg-none">
+                            <p class="viewmore-menu-title">Các thông tin khác <i class="fa-solid fa-sort-down"></i></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-inner">
+                            <ul class="footer-social">
+                                <li><a href=""><img src="./lib/images/facebook-icon.png" alt="facebook icon"></a></li>
+                                <li><a href=""><img src="./lib/images/youtube-icon.png" alt="youyubr icon"></a></li>
+                                <li><a href=""><img src="./lib/images/zalo-icon.png" alt="zalo icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="./lib/js/main.js"></script>
+    <script src="./lib/js/category.js"></script>
+</body>
+</html>
